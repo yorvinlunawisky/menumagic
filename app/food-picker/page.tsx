@@ -390,7 +390,7 @@ const MealPicker = () => {
   const [selectedMealType, setSelectedMealType] = useState("");
   const [selectedMeal, setSelectedMeal] = useState("");
   const [isAnimating, setIsAnimating] = useState(false);
-  const [language, setLanguage] = useState<"en" | "es">("en");
+  const [language, setLanguage] = useState<"en" | "es">("es");
 
   const handleSelectMeal = () => {
     if (!selectedMealType) return;
@@ -411,8 +411,8 @@ const MealPicker = () => {
   const t = translations[language];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-100 to-green-300 flex items-center justify-center p-4">
-      <div className="bg-white rounded-lg shadow-xl p-8 max-w-md w-full">
+    <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
+      <div className="bg-white rounded-lg shadow p-8 max-w-md w-full">
         <div className="flex justify-between items-center mb-6">
           <h1 className="text-2xl font-bold text-green-800">{t.title}</h1>
           <div className="relative">
